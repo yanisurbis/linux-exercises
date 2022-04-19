@@ -1,20 +1,20 @@
 ```
 1
 
-gunzip --stdout log.gz | less
+gunzip -c log.gz | less
 
 ---
 
 2
 
-zgrep -iw rebrainme log.gz
+zgrep -w rebrainme log.gz
 
 ---
 
 3
 
-tar czf logs.zip rebrainme
-tar xf logs.zip
+zip logs.zip rebrainme
+unzip -o logs.zip
 
 ---
 
